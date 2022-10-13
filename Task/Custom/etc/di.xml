@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Task\Custom\Api\PostManagementInterface" type="Task\Custom\Model\PostManagement"/>
+<!-- 	
+    <type name="Task\Custom\Model\PostManagement">
+        <arguments>
+        <argument name="fruits" xsi:type="array">
+            <item name="apple" xsi:type="string">Apple</item>
+            <item name="orange" xsi:type="string">Orange</item>
+			<item name="Piyush" xsi:type="string">Piyush</item>
+        </argument>
+    </arguments>
+    </type> -->
+
+    <virtualType name="Task\Custom\Model\PostManagement">
+        <arguments>
+            <argument name="fruits" xsi:type="array">
+                <item name="Mango" xsi:type="string">Mango</item>
+                <item name="banana" xsi:type="string">Banana</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    
+    
+
+	
+</config>
